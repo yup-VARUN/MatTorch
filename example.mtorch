@@ -1,0 +1,11 @@
+network MyNet
+input 784
+layer 128 relu
+layer 28 relu
+layer 10 softmax
+
+dataset mnist batch_size 64 shuffle true
+validation 0.1
+optimizer adam
+loss crossentropy
+train epochs 6 batch_size 64
